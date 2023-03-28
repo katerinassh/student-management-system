@@ -1,0 +1,40 @@
+<!--Include-Header-->
+<%- include('../partials/header') %>
+
+    <div class="container">
+        <div class="box-new-user" id="new-user">
+            <div class="new-usr-btn">
+                <a href="/add-student" class="new-user-text">New Student</a>
+            </div>
+        </div>
+        <div class="data-table">
+            <form method="POST">
+                <table class="main-container">
+                    <div class="isx">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="tr-nav">ID</th>
+                                <th class="tr-nav">Name</th>
+                                <th class="tr-nav">Faculty</th>
+                                <th class="tr-nav">Group</th>
+                                <th class="tr-nav">Status</th>
+                                <th class="tr-nav">Birthday</th>
+                                <th class="tr-nav">Email</th>
+                                <th class="tr-nav">Phone</th>
+                                <th class="tr-nav">Record Book</th>
+                            </tr>
+                        </thead>
+                    </div>
+                    <tbody class="tbody-main">
+                        
+                        <%- include('../partials/show') %>
+                    </tbody>
+                </table>
+            </form>
+            
+        </div>
+    </div>
+
+
+    <!--Include-Footer-->
+    <%- include('../partials/footer') %>

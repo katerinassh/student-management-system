@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --theme-color1:#1e1986;
+    --theme-color2:#8cff19;
+    --text-color:#1b1b1d;
+    --icon-color:#2f3134;
+    
+    --font-fam-normal: 'Open Sans';
+    --font-fam-head: 'Open Sans', cursive;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-fam-head);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.header-top{
+    height: 70px;
+    background-color: var(--theme-color1);
+    width: 100%;
+}
+.text-nav{
+    
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+a{
+    text-decoration: none;
+}
+.heading-top{
+    color: white;
+    font-weight: 850;
+    font-size: 1.3rem;
+}
+
+.container{
+    width: 80%;
+    
+    margin-left: 10%;
+    
+}
+.box-new-user{
+    padding: 20px 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+.new-usr-btn{
+    text-align: center;
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.1);
+    
+}
+.main-container{
+    width: 100%;
+}
+.thead-dark{
+    text-align: center;
+    font-weight: 600;
+    
+    
+}
+thead{
+    background-color: var(--text-color);
+}
+.tr-nav{
+    color: white;
+    padding: 15px 0px;
+}
+
+.tbody-main{
+    text-align: center;
+    font-weight: 550;
+    font-family: var(--font-fam-normal);
+}
+
+.table-row {
+    line-height: 3;
+}
+
+.bx-x {
+    color:rgb(206, 35, 33);
+}
+.bxs-pencil {
+    color:rgb(46, 26, 162);
+}
+
+.bx-x .bxs-pencil{
+    width: 40%;
+    font-size: 3rem;
+    padding: 4px 0px;
+    border-radius: 4px;
+}
+
+
+footer{
+  
+    height: 50px;
+    background-color: var(--theme-color1);
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    
+    
+}
+.ft-text{
+    font-weight: 650;
+}
+.bx-copyright{
+    font-size: 1rem;
+    margin-top: 7px;
+}
+
+/*Sign-up*/
+
+.new-user{
+    padding: 0px 10px;
+    font-weight: 600;
+
+}
+.new__usr{
+    color: var(--theme-color1);
+}
+.sign-up-des{
+    color: rgba(0, 0, 0, 0.473);
+}
+.create-ac{
+    color: var(--theme-color1);
+}
+.sing-up-heading{
+    text-align: center;
+    line-height: 12px;
+}
+.form-group{
+    display: flex;
+    padding: 15px 0;
+    
+}
+.form-group input{
+    padding: 12px 15px;
+}
+.form-name, .form-email, .form-group, .form-faculty, .form-phone, .form-birthday, .form-url {
+    padding: 10px 0px;
+   
+}
+form input[type=faculty], form input[type=birthday] {
+    cursor: initial;
+}
+.update-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--theme-color1);
+    color: white;
+    font-weight: 600;
+    border:none;
+    width: 60%;
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.1);
+}
+.form-btn{
+    justify-content: center;
+}
+.form-group input{
+    outline: none;
+    border-radius: 5px;
+    border-color: var(--theme-color1);
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.1);
+}
+.sign-up-container{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+.up-sign{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.radio-btn{
+    padding: 0px 6%;
+}
+.form-status{
+    margin-top: 3px;
+}
+/*  
+border: 2px solid blue;
+*/
+@media only screen and (max-width:786px) {
+    
+    .tbody-main, .thead-dark{
+        font-size: 0.8rem;
+    }
+    .bx-x, .bxs-pencil{
+        font-size: 1rem;
+    }
+    .container{
+        width: 95%;
+        margin-left: 1%;
+        padding: 0px 5px;
+    }
+    .box-new-user{
+        font-size: 1rem;
+    }
+    .heading-top{
+        font-size: 1.1rem;
+    }
+    .ft-btm, .bx-copyright{
+        font-size: 0.8rem;
+    }
+    .new-usr-btn{
+        width: 100px;
+        padding: 10px 14px;
+    }
+    .tr-nav{
+        padding: 7px 0px;
+    }
+    .sign-up-container{
+        
+        width: 100%;
+        margin-left: 0;
+    }
+    .bxs-pencil, .bx-x{
+        width: 25px;
+    }
+}
+/*  
+border: 2px solid blue;
+*/

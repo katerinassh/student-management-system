@@ -1,0 +1,75 @@
+<!--Include-Header-->
+<%- include('../partials/header') %>
+
+    <!--Body-->
+    <div class="container">
+        <div class="box-new-user" id="new-user">
+            <div class="new-usr-btn">
+                <a href="/" class="new-user-text"><< All Students </a>
+            </div>
+        </div>
+        <div class="new-user">
+            <div class="sing-up-heading">
+                <h2 class="new__usr">Update <%=student.name %> Profile</h2>
+                <p class="sign-up-des">Use the below form to update a new profile</p>
+            </div>
+            
+
+            <form action = "/api/students/<%=student.id %>"method="POST" id="usr">
+                <div class="form">
+                    <div class="sign-up-container">
+                        <div class="form-group up-sign">
+                            <label for="name" class="form-name">Name</label>
+                            <input type="text" name="name" value="<%=student.name %>" class="sign" autocomplete="off"
+                                placeholder="Ex: Mark Stoenis">
+                        </div>
+                        <div class="form-group up-sign">
+                            <label for="Faculty" class="form-faculty">Faculty</label>
+                            <input type="faculty" name="faculty" value="<%=student.faculty %>" class="sign" autocomplete="off" readonly>
+                        </div>
+                        <div class="form-group up-sign">
+                            <label for="Group" class="form-group">Group</label>
+                            <input type="group" name="group" value="<%=student.group %>" class="sign" autocomplete="off">
+                        </div>
+                        <div class="form-group up-sign">
+                            <label for="Email" class="form-email">Email</label>
+                            <input type="email" name="email" value="<%=student.email %>" class="sign" autocomplete="off"
+                                placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group up-sign">
+                            <label for="Phone" class="form-phone">Phone</label>
+                            <input type="phone" name="phone" value="<%=student.phone %>" class="sign" autocomplete="off"
+                                placeholder="0981234567">
+                        </div>
+                        <div class="form-group up-sign">
+                            <label for="Birthday" class="form-birthday">Birthday</label>
+                            <input type="birthday" name="birthday" value="<%=student.birthday %>" class="sign" autocomplete="off"
+                                placeholder="2002-12-09" readonly>
+                        </div>
+                        <div class="form-group form-group-radio">
+                            <label for="status" class="form-status">Status </label>
+                            <div class="radio-btn">
+                                <input type="radio" id="radio-1" name="status" class="sign" value="registrated"<%= student.status === "registrated"?"checked" : "" %>>
+                                <label for="radio-1" class="sign">Registrated</label>
+                            </div>
+                            <div class="radio-btn">
+                                <input type="radio" id="radio-2" name="status" class="sign" value="studing" <%= student.status === "studing"?"checked" : "" %>>
+                                <label for="radio-2" class="sign">Studing</label>
+                            </div>
+                            <div class="radio-btn">
+                                <input type="radio" id="radio-3" name="status" class="sign" value="graduated" <%= student.status === "graduated"?"checked" : "" %>>
+                                <label for="radio-3" class="sign">Graduated</label>
+                            </div>
+                        </div>
+                        <div class="form-btn form-group">
+                            <button class="sign-up-submit-btn update-btn save">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Include-Footer-->
+    <%- include('../partials/footer') %>

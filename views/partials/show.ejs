@@ -1,0 +1,19 @@
+<% for(let i = 0; i < students.length; i++) {%> 
+    <tr class="table-row">
+        <td class="td-row"><%= i + 1 %></td>
+        <td class="td-row"><%= students[i].name  %></td>
+        <td class="td-row"><%= students[i].faculty  %></td>
+        <td class="td-row"><%= students[i].group %></td>
+        <td class="td-row"><%= students[i].status  %></td>
+        <td class="td-row"><%= students[i].birthday  %></td>
+        <td class="td-row"><%= students[i].email  %></td>
+        <td class="td-row"><%= students[i].phone  %></td>
+        <td class="td-row"><a href='/views<%= students[i].record_book  %>'><%= students[i].record_book  %></a></td>
+        <td class="td-row">
+            <span class="tr-icons">
+                <a href="/update-student?id=<%= students[i].id%> "><i class='bx bxs-pencil'></i></a>
+                <a href="/delete-student/?id=<%= students[i].id%> "><i class='bx bx-x'></i></a>
+            </span>
+        </td>
+    </tr>
+    <% } %> 

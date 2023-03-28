@@ -1,0 +1,45 @@
+{
+  "name": "booking-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "start:run": "nodemon ./index.js",
+    "migrate": "knex migrate:latest --knexfile db/knexfile.js",
+    "migrate:up": "knex migrate:up --knexfile db/knexfile.js",
+    "migrate:down": "knex migrate:down --knexfile db/knexfile.js",
+    "migrate:make": "knex migrate:make --knexfile db/knexfile.js",
+    "migrate:rollback": "knex migrate:rollback --knexfile db/knexfile.js",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katerinassh/booking-system.git"
+  },
+  "author": "@katerinassh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katerinassh/booking-system/issues"
+  },
+  "homepage": "https://github.com/katerinassh/booking-system#readme",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "nodemon": "^2.0.21",
+    "objection": "^3.0.1",
+    "pg": "^8.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
